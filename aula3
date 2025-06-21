@@ -1,0 +1,19 @@
+from tkinter import *
+
+root=Tk()
+
+root.title("botões com fundo")
+root.wm_resizable(width=False, height=False)
+root.geometry("500x400+200+200")
+root.configure(bg="#d93ffc")
+button1= Button(root, text="botão exemplo")
+button2= Button(root, text="botão exemplo")
+button3= Button(root, text="botão exemplo")
+button4= Button(root, text="botão exemplo")
+
+button1.grid(row=0, column=0, padx=10, pady=10)
+button2.grid(row=0, column=1, padx=10, pady=10)
+button3.grid(row=1, column=0, padx=10, pady=10)
+button4.grid(row=1, column=1, padx=10, pady=10)
+
+root.mainloop()
